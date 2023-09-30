@@ -3,3 +3,15 @@ text = #D9E0EC / #1F1115
 bg quem somos = #2F7AFA
 bg = #2155c4
 form input = #89AEDF
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,600;9..40,700;9..40,900&family=Lisu+Bosa:wght@600&family=Lobster&display=swap');
+
+font-family: 'DM Sans', sans-serif;
+font-family: 'Lisu Bosa', serif;
+font-family: 'Lobster', cursive;
+
+bg-main = Foto de <a href="https://unsplash.com/pt-br/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fotis Fotopoulos</a> na <a href="https://unsplash.com/pt-br/fotografias/6sAl6aQ4OWI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+bg-mobile = Foto de <a href="https://unsplash.com/pt-br/@altumcode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AltumCode</a> na <a href="https://unsplash.com/pt-br/fotografias/PuxTq4DwUHE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+bg-desktop = Foto de <a href="https://unsplash.com/pt-br/@carlheyerdahl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carl Heyerdahl</a> na <a href="https://unsplash.com/pt-br/fotografias/KE0nC8-58MQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+bg-web = Foto de <a href="https://unsplash.com/pt-br/@cgower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher Gower</a> na <a href="https://unsplash.com/pt-br/fotografias/m_HRfLhgABo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+bg-about = Foto de <a href="https://unsplash.com/pt-br/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Austin Distel</a> na <a href="https://unsplash.com/pt-br/fotografias/wD1LRb9OeEo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
