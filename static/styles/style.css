@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,600;9..40,700;9..40,900&family=Lisu+Bosa:wght@600&family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #D9E0EC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; 
+    background: linear-gradient(to right, #163882, #326ff3);
+}
+
+header .logo {
+    display: flex;
+    margin-left: -4rem;
+}
+
+header .logo img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    margin-top: .25rem;
+}
+
+header .logo p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: .75rem;
+}
+
+header .list {
+    margin: 1.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #D9E0EC;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 0 1rem 0 1rem;
+}
+
+#main {
+    background: url(/static/images/bg-main.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
