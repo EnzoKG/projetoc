@@ -1,57 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,600;9..40,700;9..40,900&family=Lisu+Bosa:wght@600&family=Lobster&display=swap');
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;600;700;900&family=Lisu+Bosa:wght@600&family=Lobster&display=swap');
 
+/* Reset CSS universal */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Estilização do cabeçalho */
 header {
     width: 100%;
     height: 5rem;
-    font-family: 'DM Sans', sans-serif;
     color: #D9E0EC;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: relative; 
-    background: linear-gradient(to right, #163882, #326ff3);
+    position: fixed; 
+    background: linear-gradient(to left, #163882, #326ff3);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
+/* Logo do cabeçalho */
 header .logo {
     display: flex;
-    margin-left: -4rem;
+    align-items: center;
 }
 
 header .logo img {
     width: 5rem;
     height: 5rem;
-    margin-right: 1rem;
-    margin-top: .25rem;
+    margin: .50rem;
 }
 
 header .logo p {
+    font-family: 'Lobster', serif;
     font-size: 2.5rem;
     font-weight: 400;
-    margin-top: .75rem;
 }
 
+/* Estilização da lista de navegação */
 header .list {
     margin: 1.5rem;
 }
 
+/* Estilo dos links de navegação */
 header a {
+    font-family: 'DM Sans', sans-serif;
     text-decoration: none;
     color: #D9E0EC;
     font-size: 1.5rem;
     font-weight: 200;
     margin: 0 1rem 0 1rem;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Estilo da linha animada */
+header a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #D9E0EC;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
+/* Estilização da seção principal */
 #main {
-    background: url(/static/images/bg-main.jpg);
+    background: linear-gradient(to left, #326ff3cd, #163882de), url('/static/images/bg-main.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 12rem 0 0 4.5rem;
+}
+
+#main h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    color: #D9E0EC;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+#main h4 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #D9E0EC;
+    margin-bottom: 2rem;
+}
+
+#main a {
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background: #D9E0EC;
+    font-weight: 200;
+    transition: .5s ease;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#main a:hover {
+    background: #acbcd6;
+}
+
+#who {
+    width: 100%;
+    height: 100vh;
+    background: #4781ff;
+    padding: 8rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#who p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #D9E0EC;
+    text-align: left;
 }
