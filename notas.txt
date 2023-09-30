@@ -1,0 +1,5 @@
+header = #1F50B7
+text = #D9E0EC / #1F1115
+bg quem somos = #2F7AFA
+bg = #2155c4
+form input = #89AEDF
