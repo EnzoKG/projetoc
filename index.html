@@ -25,7 +25,7 @@
     <section id="main">
         <h1>Desenvolva soluções<br>inovadoras</h1>
         <h4>Transforme sua ideia em realidade com a ProCode Systems,<br>especialista em desenvolvimento de software.</h4>
-        <a href="#">Saiba mais</a>
+        <a href="#contact">Saiba mais</a>
         <!--Foto de Fotis Fotopoulos na Unsplash-->
     </section>
     <section id="who">
@@ -63,17 +63,27 @@
         <img src="/static/images/bg-about.jpg" alt="Time"> <!--Foto de Austin Distel na Unsplash-->
     </section>
     <section id="contact">
-        <h1>Fale conosco</h1>
-        <p>Entre em contato conosco usando o formulário abaixo. Estamos ansiosos para ouvir você e ajudá-lo com suas necessidades de construção.</p>
+        <div class="container">
+            <h1>Fale conosco</h1>
+            <p>Entre em contato conosco usando o formulário abaixo. Estamos ansiosos para ouvir você e ajudá-lo com suas necessidades de construção.</p>
+        </div>
         <form action="">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="number">Whatsapp</label>
-            <input type="number" name="number" id="number">
-            <label for="message">Mensagem</label>
-            <input type="text" name="message" id="message">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="number">Whatsapp</label>
+                <input type="number" name="number" id="number">
+            </div>
+            <div class="form-group textarea-group">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="Insira sua mensagem aqui!" rows="4"></textarea>
+            </div>
             <button type="submit">Enviar</button>
         </form>
     </section>

@@ -8,10 +8,10 @@
     padding: 0;
 }
 
-/* Remoção do scrolling da página */
+/* Remoção do scrolling da página 
 html, body {
     overflow: hidden;
-}
+} */
 
 /* Estilização do cabeçalho */
 header {
@@ -187,7 +187,7 @@ header a:hover::before {
 #about {
     width: 100%;
     height: 100vh;
-    background: #1d59c3;
+    background: #2F7AFA;
     font-family: 'DM Sans', sans-serif;
     color: #D9E0EC;
     display: flex;
@@ -197,7 +197,7 @@ header a:hover::before {
     font-weight: 600;
     font-size: 2rem;
     padding: 7.2rem 0 0 3rem;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 #about .container p {
@@ -215,4 +215,195 @@ header a:hover::before {
     border-radius: 35px;
     margin: 12rem 8rem 0 1rem;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando a seção 'Fale conosco' 
+#contact {
+    width: 100%;
+    height: 100vh;
+    padding-top: 6rem;
+    display: flex;
+    background: #2155c4;
+    font-family: 'DM Sans', sans-serif;
+    color: #D9E0EC;
+}
+
+#contact .container {
+    padding: 8rem 3rem 0 4rem;
+    width: 50%;
+}
+
+#contact .container h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+#contact .container p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#contact form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact form label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    flex-basis: 100%;
+}
+
+#contact form input{
+    flex-basis: 49.5%;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: .75rem;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #D9E0EC;
+    margin-bottom: 10px;
+}
+
+#contact form textarea {
+    flex-basis: 45.9%;
+    resize: none;
+    width: 100%;
+    height: 12rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: .75rem;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #D9E0EC;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    outline: none;
+}
+
+#contact form button {
+    flex-basis: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background: #D9E0EC;
+    font-weight: 200;
+    transition: .5s ease;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact form button:hover {
+    background: #acbcd6;
+} */
+
+/* Estilização da seção 'Fale conosco' */
+#contact {
+    width: 100%;
+    height: 100vh;
+    padding-top: 6rem;
+    display: flex;
+    background: #2155c4;
+    font-family: 'DM Sans', sans-serif;
+    color: #D9E0EC;
+}
+
+#contact .container {
+    padding: 8rem 3rem 0 4rem;
+    width: 50%;
+}
+
+#contact .container h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+#contact .container p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#contact form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact .form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact .textarea-group {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+#contact form label {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form input[type="number"] {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: .75rem;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #D9E0EC;
+}
+
+#contact form textarea {
+    width: 100%;
+    height: 12rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: .75rem;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #D9E0EC;
+    resize: none;
+}
+
+#contact form button {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background: #D9E0EC;
+    font-weight: 200;
+    transition: .5s ease;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact form button:hover {
+    background: #acbcd6;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+}
+
+
+/* Estilização do footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #163882; /* Cor de fundo do footer */
+    color: #D9E0EC; /* Cor do texto do footer */
+    text-align: center;
+    padding: .5rem 0; /* Espaçamento interno do footer */
 }
