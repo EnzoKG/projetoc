@@ -8,10 +8,40 @@
     padding: 0;
 }
 
+/* Animação fade de página */
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeout 1s ease;
+}
+
 /* Remoção do scrolling da página */
 html, body {
     overflow: hidden;
 } 
+
+/* Aplicando animação fade de página */
+body {
+    animation: fadein 1s;
+}
+
+/* Estilizando vídeo */
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9999;
+}
 
 /* Estilização do cabeçalho */
 header {
@@ -77,6 +107,12 @@ header a::before {
 
 header a:hover::before {
     width: 100%;
+}
+
+/* Animação de sections */
+.section {
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* Estilização da seção principal */
