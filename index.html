@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProCode Sistemas</title>
     <link rel="stylesheet" href="/static/styles/style.css">
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <script src="/static/scripts/alert.js"></script>
 </head>
 <body>
     <video id="video-background" autoplay muted>
-        <source src="/static/videos/loading.mp4" type="video/mp4">
+        <source src="/static/videos/load.mp4" type="video/mp4">
     </video>
     <div id="main-content">
         <header>
@@ -71,7 +72,7 @@
                 <h1>Fale conosco</h1>
                 <p>Entre em contato conosco usando o formulário abaixo. Estamos ansiosos para ouvir você e ajudá-lo com suas necessidades de construção.</p>
             </div>
-            <form action="">
+            <form action="/static/scripts/contact.php" method="POST">
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <input type="text" name="name" id="name" required>
@@ -91,7 +92,7 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <footer>Copyright © 2023. Todos os direitos reservados. Autoria de ProCode Systems.</footer>
+        <footer>Copyright © 2023. Todos os direitos reservados. Autoria de ProCode Sistemas.</footer>
     </div>
     <script src="/static/scripts/script.js"></script>
 </body>
